@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Retro Theme Colors */
+:root {
+  --bg: #0d0d0d;
+  --green: #00ff66;
+  --border: #00cc55;
+}
+
+body {
+  background: var(--bg);
+  color: var(--green);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* CRT Overlay */
+.crt {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    rgba(255,255,255,0.03),
+    rgba(255,255,255,0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  z-index: 10;
+}
+
+/* Layout */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  color: #88ffbb;
+  font-size: 10px;
+}
+
+/* Boxes */
+.box {
+  border: 3px solid var(--border);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+/* Links */
+a {
+  color: #66ff99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 40px;
+  opacity: 0.8;
+}
